@@ -1,0 +1,75 @@
+.card__container {
+	max-width: 1446px;
+	margin: 0 auto;
+}
+
+.services__wrapper {
+	background: #f3f3f5;
+}
+
+.services-card__title span {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 150%;
+	color: #818181;
+	font-family: 'Gilroy';
+	margin-right: 7px;
+	padding-top: 17px;
+}
+
+.services-card__title h2 {
+	font-weight: 600;
+	font-size: 52px;
+	line-height: 150%;
+	color: #1a1a1a;
+}
+
+.services-card__title {
+	display: flex;
+}
+
+.services__card p {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 150%;
+	color: #818181;
+	max-width: 450px;
+	transition: all 0.5s ease;
+	animation: slide 1s;
+	margin-left: 80px;
+}
+
+.services__card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	border-top: 1px solid #d8d7db;
+	border-bottom: 1px solid #d8d7db;
+	height: 262px;
+}
+
+.services__cardCompanies {
+	background: #fff;
+	height: 260px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 450px;
+	padding-left: 30px;
+	padding-right: 30px;
+	animation: slide 1s;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.services__card-companies img {
+}

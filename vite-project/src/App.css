@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Gilroy';
+	color: #1a1a1a;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	max-width: 1776px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 100%;
+	background: #f3f3f5;
+	height: 950px;
+	position: relative;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/Gilroy-Light.otf') format('opentype'),
+		url('fonts/Gilroy-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'RoadRadio';
+	src: url('fonts/roadradio_bold.otf') format('opentype');
+}
+
+p {
+	font-family: 'Gilroy';
+}
+
+body {
+	color: #1a1a1a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'RoadRadio';
+}
