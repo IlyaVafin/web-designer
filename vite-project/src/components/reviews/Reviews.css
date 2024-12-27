@@ -1,0 +1,110 @@
+.reviews__wrapper {
+	padding: 140px 255px;
+	position: relative;
+}
+
+.reviews__content {
+	display: flex;
+	align-items: center;
+}
+
+.reviews__content-text {
+	margin-left: 30px;
+	width: 684px;
+	height: 324px;
+}
+
+.reviews__content-text p {
+	max-width: 540px;
+}
+
+.reviews__content-text h4 {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 15px;
+	color: #818181;
+	margin-bottom: 20px;
+}
+
+.reviews__name {
+	font-family: 'Gilroy';
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 32px;
+	margin-bottom: 24px;
+
+}
+
+.reviews__desc {
+	font-family: Gilroy;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 25.5px;
+	color: #818181;
+	margin-bottom: 50px;
+}
+
+.reviews__num  {
+	font-size: 128px;
+	font-weight: lighter;
+	line-height: 128px;
+	color: #d8d7db;
+	position: absolute;
+	top: 20px;
+	left: 1250px;
+}
+
+.custom-next {
+	background: yellow;
+	border: none;
+	margin-left: 30px;
+	position: absolute;
+	top: 320px;
+	left: 1270px;
+	z-index: 9999;
+}
+
+.custom-prev {
+	background: yellow;
+	border: none;
+	position: absolute;
+	top: 320px;
+	left: 1220px;
+	z-index: 999999;
+}
+
+
+
+.swiper-button-next, .swiper-button-prev {
+  display: none !important;
+}
+.swiper-button-disabled {
+	background: transparent;
+	border: 1px solid #d8d7db;
+}
+.custom-prev, .custom-next {
+	width: 56px;
+	height: 56px;
+}
+
+.custom-pagination {
+	display: flex;
+	width: 1410px;
+	gap: 0px;
+	height: 15px;
+	margin-top: 52px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+ width: 705px;
+ height: 1px;
+ background: #D8D7DB;
+}
+
+
+.custom-pagination .swiper-pagination-bullet-active {
+	background: #1a1a1a;
+	width: 705px;
+	height: 1px;
+}
+

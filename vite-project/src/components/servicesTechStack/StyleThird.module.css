@@ -1,0 +1,26 @@
+.services__cardCompanies {
+	background: #fff;
+	height: 260px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	flex-wrap: wrap;
+	width: 450px;
+	padding-top: 20px;
+	animation: slide 1s;
+    padding-right: 10px;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.services__cardCompanies img {
+    margin-left: 20px;
+}

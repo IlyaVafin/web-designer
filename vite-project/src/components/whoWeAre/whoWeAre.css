@@ -1,0 +1,63 @@
+.who-we-are__video {
+	width: 690px;
+	height: 383px;
+	position: relative;
+	margin-top: 140px;
+}
+
+.who-we-are__wrapper {
+	background: #eeeef0;
+	max-width: 100%;
+	height: 838px;
+	position: relative;
+}
+
+.who-we-are__wrapper h1 {
+	position: absolute;
+	left: 245px;
+	top: 140px;
+}
+
+.button-play {
+	position: absolute;
+	border: none;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	top: 142px;
+	left: 295px;
+	transition: all 0.3s ease;
+}
+
+.container-content {
+	max-width: 1450px;
+	margin: 0 auto;
+}
+
+.who-we-are__text {
+	margin-top: 244px;
+}
+
+.who-we-are__text p {
+	max-width: 690px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 150%;
+	color: #818181;
+	margin-bottom: 32px;
+}
+
+.who-we-are__text h4,
+h5 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 100%;
+	color: #1a1a1a;
+	margin-bottom: 24px;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
