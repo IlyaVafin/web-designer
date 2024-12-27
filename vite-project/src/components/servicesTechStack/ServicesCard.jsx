@@ -13,6 +13,7 @@ const ServicesCard = ({
 	img6,
 	img7,
 	img8,
+	img9
 }) => {
 	const [showCard, setCardShow] = useState(false)
 	const showCardFunc = () => {
@@ -46,6 +47,7 @@ const ServicesCard = ({
 						<img style={{ display: visible }} src={img6} alt='' />
 						<img style={{ display: visible }} src={img7} alt='' />
 						<img style={{ display: visible }} src={img8} alt='' />
+						<img style={{ display: visible }} src={img9} alt='' />
 					</div>
 				</section>
 			</div>

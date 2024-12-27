@@ -45,6 +45,13 @@ body {
 	color: #1a1a1a;
 }
 
+h1 {
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 52px;
+	margin-bottom: 52px;
+}
+
 h1,
 h2,
 h3,

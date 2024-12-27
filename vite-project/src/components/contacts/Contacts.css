@@ -1,0 +1,17 @@
+.contacts__container {
+	max-width: 1410px;
+	margin: 0 auto;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-register  {
+	width: 570px;
+	height: 63px;
+	border: none;
+	border-bottom: 1px solid #1a1a1a;
+	outline: none;
+}

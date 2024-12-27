@@ -1,21 +1,9 @@
-import React, { useRef, useState } from 'react'
-import './whoWeAre.css'
+import React from 'react'
+import Video from '../shared/Video'
 import mountain from './../../assets/199958-911694865_tiny.mp4'
-import playButton from './../../assets/playButton.png'
 import rating from './../../assets/rating.png'
+import './whoWeAre.css'
 const WhoWeAre = () => {
-	const videoRef = useRef(null)
-	const [isPlaying, setIsPlaying] = useState(false)
-	const playVideo = () => {
-		const video = videoRef.current
-		if (video.paused || video.ended) {
-			video.play()
-			setIsPlaying(true)
-		} else {
-			video.pause()
-			setIsPlaying(false)
-		}
-	}
 	return (
 		<>
 			<div className='who-we-are__wrapper'>
@@ -24,20 +12,7 @@ const WhoWeAre = () => {
 						<h1>Who we are</h1>
 						<div className='flex'>
 							<div className='who-we-are__video'>
-								<video
-									onClick={playVideo}
-									ref={videoRef}
-									width={690}
-									height={383}
-									src={mountain}
-								></video>
-								<button
-									style={{ opacity: isPlaying ? '0' : '1' }}
-									onClick={playVideo}
-									className='button-play'
-								>
-									<img src={playButton} alt='' />
-								</button>
+								<Video srcVideo={mountain}/>
 							</div>
 							<div className='who-we-are__text'>
 								<h4>Hi! We are a team of professionals</h4>

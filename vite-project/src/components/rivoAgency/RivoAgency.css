@@ -1,0 +1,48 @@
+.rivo-agency__container {
+	max-width: 1410px;
+	margin: 0 auto;
+}
+
+.rivo-agency__wrapper {
+	padding: 140px 0;
+}
+
+.rivo-agency__card-wrapper-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.rivo-agency__statistics {
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	gap: 50px;
+	text-align: center;
+	align-items: center;
+}
+
+.rivo-agency__item h2 {
+	font-family: 'Gilroy';
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 64px;
+}
+
+.rivo-agency__item p {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+}
+
+.rivo-agency__card-wrapper-bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.center-img {
+	position: absolute;
+	top: 565px;
+	left: 725px;
+}
