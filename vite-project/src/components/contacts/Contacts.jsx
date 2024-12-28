@@ -1,65 +1,72 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useForm } from 'react-hook-form'
 import arrowUp from './../../assets/arrow-up.svg'
 import './Contacts.css'
+import skrepka from './../../assets/skrepka.svg'
 const Contacts = () => {
-	const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm()
-
-  const onSubmit = (data) => console.log(data)
-
-  console.log(watch("example")) // watch input value by passing the name of it
-	// const {
-	// 	register,
-	// 	formState: {
-	// 		errors
-	// 	},
-	// 	handleSubmit,
-	// } = useForm()
-
-	// const onSubmit = (data) => {
-	// 	alert(JSON.stringify(data))
-	// }
+	const fileRef = useRef(null)
+	const handleFileButtonClick = () => {
+		event.preventDefault()
+		fileRef.current.click();
+	};
+	
+	const handleFileChange = (e) => {
+		const fileName = e.target.files[0]?.name || 'No file chosen';
+		document.querySelector('.file-name').textContent = fileName;
+	};
 	return (
 		<>
-		<div className="contacts__wrapper">
-			<div className="contacts__container">
-				<h1>Contacts</h1>
-				{/* <form className='form' onSubmit={handleSubmit(onSubmit)} action="submit">
-				<div className="">
-				<input name='option' type="radio" />
-				<label htmlFor="">Sales Representative</label>
-				<input type="radio" name='option' />
-				<label>Sales Representative</label>
+			<div className="contacts__wrapper">
+				<div className="contacts__container">
+					<h1>Contacts</h1>
+					<form className='contact-form' action="">
+						<div className="radio-group">
+							<label htmlFor="">
+								<input type="radio" />
+								Sales Representative
+							</label>
+							<label htmlFor="">
+								<input type="radio" />
+								Sales Representative
+							</label>
+						</div>
+						<div className="input-group">
+							<label htmlFor="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Alex Filiuk" />
+						</div>
+
+
+						<div className="input-group">
+							<label htmlFor="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="alex.f" />
+						</div>
+
+
+						<div className="input-group">
+							<label htmlFor="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="+38 (097) 7" />
+						</div>
+
+
+						<div className="input-group">
+							<label htmlFor="message">Message</label>
+							<input id="message" name="message" placeholder="Type your message here"></input>
+						</div>
+
+						<div style={{ marginBottom: '42px', marginTop: '32px' }} className="input-group-file">
+							<label htmlFor="file">Attach file</label>
+							<div className="file-upload">
+							<button onClick={handleFileButtonClick}	
+							className='file-button'>IMAGE.JPG</button>
+							<img src={skrepka} alt="" />
+							</div>
+							<input onChange={handleFileChange} ref={fileRef} id='file-input' type="file" />
+						</div>
+
+						<button type="button" className="btn-send-message">Send Message <img src={arrowUp} alt="" /></button>
+					</form>
 				</div>
-				<label>
-					Name: <br />
-					<input className='input-register' {...register('firstName')}	 name='name' />
-				</label>
-				<label>
-					Email: <br />
-					<input type='email' className='input-register' {...register('Email')}	 name='name' />
-				</label>
-				<button type='submit'>Send message <img src={arrowUp} alt="" /></button>
-				</form> */}
-				   /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {/* register your input into the hook by invoking the "register" function */}
-      <input defaultValue="test" {...register("example")} />
-
-      {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
-      {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
-
-      <input type="submit" />
-    </form>
 			</div>
-		</div>
 		</>
 	)
 }

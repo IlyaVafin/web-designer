@@ -3,15 +3,89 @@
 	margin: 0 auto;
 }
 
-.form {
+.input-group {
 	display: flex;
 	flex-direction: column;
+	margin-top: 32px;
 }
 
-.input-register  {
+.input-group input {
 	width: 570px;
 	height: 63px;
 	border: none;
 	border-bottom: 1px solid #1a1a1a;
 	outline: none;
+	font-family: 'Gilroy';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28.25px;
+}
+
+.input-group label {
+	font-family: 'Gilroy';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #818181;
+}
+
+.input-group-file {
+	border-bottom: 1px solid #1a1a1a;
+	width: 570px;
+	padding-bottom: 15px;
+}
+
+.file-upload {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.input-group-file label {
+	font-family: 'Gilroy';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #818181;
+}
+
+
+
+.btn-send-message {
+	width: 570px;
+	height: 56px;
+	background: transparent;
+	border: 1px solid #1a1a1a;
+	outline: none;
+	margin-top: 10px;
+	font-family: 'RoadRadio';
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 17px;
+	color: #1a1a1a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 24px;
+}
+
+.btn-send-message img {
+	margin-left: 8px;
+}
+
+.file-button {
+	width: 87px;
+	height: 24px;
+	background: #d7d8db;
+	border: none;
+	font-family: 'RoadRadio';
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 12px;
+	margin-top: 24px;
+	cursor: pointer;
+}
+
+.input-group-file input[type = "file"] {
+	display: none;
 }
