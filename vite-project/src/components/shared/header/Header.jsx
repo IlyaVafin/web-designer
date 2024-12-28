@@ -7,6 +7,8 @@ import inst from '../../../assets/inst.svg'
 import face from '../../../assets/face.svg'
 import linked from '../../../assets/LinkedIn.svg'
 import './Header.css'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navigation from '../Navigation'
 const Header = () => {
 	const [show, setShow] = useState(false)
 	const showFunc = () => {
@@ -38,75 +40,7 @@ const Header = () => {
 				</div>
 				<div className='container__menu-burger'>
 					<nav className='menu__burger-open'>
-						<ul className='burger-open__list'>
-							<li>
-								<a href=''>Home</a>
-							</li>
-							<li>
-								<a href=''>Who We Are</a>
-							</li>
-							<li>
-								<a href=''>Reviews</a>
-							</li>
-							<li>
-								<a href=''>Contact</a>
-							</li>
-							<li>
-								<a style={{ position: 'relative' }} href=''>
-									Career
-									<span className='hot'>HOT</span>
-								</a>
-							</li>
-							<li>
-								<a href=''>Blog</a>
-							</li>
-						</ul>
-						<ul className='burger-open__list-second'>
-							<li>
-								<p className='Projects'>Projects</p>
-								<div className='links-list'>
-									<a href=''>Meda</a>
-									<a href=''>Saltmine</a>
-									<a href=''>Odex</a>
-									<a href=''>Jotul</a>
-									<a href=''>Haulcars</a>
-									<a href=''>Skyline Enerrgy</a>
-									<a href=''>...</a>
-								</div>
-							</li>
-							<li style={{ maxWidth: '493px' }}>
-								<a className='Services'>Services</a>
-								<div className='links-list'>
-									<a href=''>Custom Software</a>
-									<a href=''>Mobile Development</a>
-									<a href=''>Web Development</a>
-								</div>
-							</li>
-							<li>
-								<p className='Industry'>Industry Expertise</p>
-								<div className='industry__links'>
-									<a href=''>Healthcare & Fitness</a>
-									<a href=''>Real Estate</a>
-									<a href=''>Custom CRM</a>
-									<a href=''>Education & E-learning</a>
-									<div className='industry__links-bottom'>
-										<a style={{ marginLeft: '0' }} href=''>
-											Food & Restaurant
-										</a>
-										<a href=''>Retail & E-Commerce</a>
-										<a href=''>Logistic & Distribution</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a className='Stack'>Our Stack</a>
-								<div className='links-list'>
-									<a href=''>Custom Software</a>
-									<a href=''>Mobile Development</a>
-									<a href=''>Web Development</a>
-								</div>
-							</li>
-						</ul>
+						<Navigation/>
 					</nav>
 				</div>
 				<div className='info__wrapper'>
@@ -156,11 +90,13 @@ const Header = () => {
 			<header style={{ display: show ? 'none' : 'block' }} className='header'>
 				<div className='container'>
 					<div className='header__inner'>
+						<Link to= '/'>
 						<img
 							style={{ marginBottom: '19px', marginTop: '19px' }}
 							src={Logo}
 							alt=''
 						/>
+						</Link>
 						<nav className='nav'>
 							<ul className='nav__list'>
 								<li>
@@ -179,7 +115,7 @@ const Header = () => {
 									</a>
 								</li>
 								<li>
-									<a href=''>Contacts</a>
+									<Link to="/contact">Contacts</Link>
 								</li>
 								<li>
 									<a href=''>

@@ -60,3 +60,42 @@ h5,
 h6 {
 	font-family: 'RoadRadio';
 }
+
+.kaput__wrapper {
+	padding-top: 72px;
+	background: #F3F3F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.kaput__wrapper h3 {
+	font-family: 'Gilroy';
+	font-size: 52px;
+	font-weight: bold;
+	line-height: 67.6px;
+	color: #1a1a1a;
+	margin-bottom: 24px;
+	margin-top: 42px;
+}
+
+.kaput__wrapper button {
+	width: 227px;
+	height: 48px;
+	border: #1a1a1a solid 1px;
+	background: transparent;
+	font-family: 'RoadRadio';
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 7px;
+	cursor: pointer;
+}
+
+.kaput__bg {
+	background: #F3F3F5;
+}
