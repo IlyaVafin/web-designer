@@ -1,0 +1,86 @@
+.careers__container {
+	max-width: 1410px;
+	margin: 0 auto;
+	margin-bottom: 140px;
+}
+
+.careers__container h1 {
+	margin-top: 52px;
+	margin-bottom: 22px;
+}
+
+.vacancies-card {
+	border: 1px solid #d8d7db;
+	height: 66px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 30px;
+	margin-top: 30px;
+}
+
+
+.HOT {
+	font-family: 'Gilroy';
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 14.32px;
+	color: #1a1a1a;
+	background: yellow;
+	padding: 1px 4px;
+}
+
+.vacancies-card__vacancie {
+	font-family: 'RoadRadio';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #1a1a1a;
+}
+
+.vacancies-card__salary {
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 27px;
+	color: #1a1a1a;
+}
+
+.vacancies-card__grade {
+	font-family: 'Gilroy';
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 14.32px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: #1a1a1a;
+	background: yellow;
+	padding: 1px 4px;
+}
+
+.vacancies-card__btn {
+	width: 171px;
+	height: 66px;
+	background: transparent;
+	font-family: 'RoadRadio';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	border: 1px solid #1a1a1a;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.vacancies-card__btn:hover {
+	background: #FDDD0A;
+	border: none;
+}
+
+.vacancies-card__place {
+	font-family: 'Gilroy';
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+	color: #1a1a1a;
+}

@@ -18,10 +18,10 @@ const Navigation = () => {
 								<a href=''>Contact</a>
 							</li>
 							<li>
-								<a style={{ position: 'relative' }} href=''>
+								<Link  style={{ position: 'relative' }} to = "/carrers">
 									Career
 									<span className='hot'>HOT</span>
-								</a>
+								</Link>
 							</li>
 							<li>
 								<a href=''>Blog</a>

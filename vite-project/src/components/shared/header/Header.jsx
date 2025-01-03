@@ -118,10 +118,10 @@ const Header = () => {
 									<Link to="/contact">Contacts</Link>
 								</li>
 								<li>
-									<a href=''>
+									<Link to="/carrers">
 										Careers
 										<span className='hot'>HOT</span>
-									</a>
+									</Link>
 								</li>
 							</ul>
 							<nav className='nav__menu'>
